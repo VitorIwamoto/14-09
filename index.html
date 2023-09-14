@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <script>
+        //uma assinatura e recebimento de parametro
+        function validacao(){
+            //console.log("Passou");
+            //console.log(document.getElementById('edtNome').value);
+            if(document.getElementById('edtNome').value == ""){
+                alert("O campo nome está vazio");
+            }
+
+            if(document.getElementById('edtEndereco').value == ""){
+                alert("O campo Endereço está vazio");
+            }
+            
+            if(document.getElementById('edtBairro').value == ""){
+                alert("O campo Bairro está vazio");
+            }
+
+            if(document.getElementById('edtCEP').value == ""){
+                alert("O campo CEP está vazio");
+                
+            }
+            
+            if(document.getElementById('edtCidade').value == ""){
+                alert("O campo Cidade está vazio");
+            }
+           
+            if(document.getElementById('edtEstado').value == ""){
+                alert("O campo Estado está vazio");
+            }
+
+            if(document.getElementById('edtTelefone').value == ""){
+                alert("O campo Telefone está vazio");
+                
+            }
+        }
+    </script>
+</head>
+    <body>
+        <form name="cadastrar" id="cadastrar" method="POST" action=""> 
+
+            Nome: <input type="text" name="edtNome" id="edtNome"> <br> <br>
+
+            Endereço: <input type="text" name="edtEndereco" id="edtEndereco"> <br> <br>
+
+            Bairro: <input type="text" name="edtBairro" id="edtBairro"> <br> <br>
+
+            CEP: <input type="number" name="edtCEP" id="edtCEP"> <br> <br>
+
+            Cidade: <input type="text" name="edtCidade" id="edtCidade"> <br> <br> 
+            
+            Estado: <input type="text" name="edtEstado" id="edtEstado"> <br> <br>
+
+            Telefone: <input type="number" name="edtTelefone" id="edtTelefone"> <br> <br>
+
+            <input type="button" name="btnCadastrar" id="btnCadastrar" value="Cadastrar" onclick="validacao()">
+        
+            
+
+        </form>
+    </body>
+</html>
